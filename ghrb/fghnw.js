@@ -6,7 +6,7 @@ function fetgh() {
     })
     .then(data => {
       console.log(data);
-      window.open('/').document.write(data);
+      window.open('a:lmao').document.write(data);
       document.body.innerHTML = `<p>This window can now be closed. If a new window hasn't opened, click the button below :)</p>
       <button onclick="fetgh()">Click me!</button>`;
     })
