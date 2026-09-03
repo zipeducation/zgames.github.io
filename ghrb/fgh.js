@@ -1,4 +1,4 @@
-fetch('https://thegportal.github.io/ghrb/index.html')
+fetch('https://raw.githubusercontent.com/zipeducation/zgames.github.io/refs/heads/main/ghrb/index.html')
   .then(response => {
     if (!response.ok) throw new Error('Network response was baddd~');
     return response.text();
