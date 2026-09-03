@@ -9,5 +9,5 @@ fetch('https://raw.githubusercontent.com/zipeducation/zgames.github.io/refs/head
   })
   .catch(error => {
     console.error('Fetch error: ', error, ' :(');
-    document.body.innerHTML = `<p style="margin: 0; font-family: Helvetica;">Failed to fetch the zGames data  :(</p>`;
+    document.body.innerHTML = `<p style="margin: 0; font-family: Helvetica;">Failed to fetch the zGames data :(</p>`;
   });
