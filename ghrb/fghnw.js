@@ -12,7 +12,9 @@ function fetgh() {
     })
     .catch(error => {
       console.error('Fetch error: ', error, ' :(');
-      document.body.innerHTML = `<p style="margin: 0; font-family: Helvetica;">Failed to fetch the zGames data :(</p>`;
+      document.body.innerHTML = `<p style="margin: 0; font-family: Helvetica">Failed to fetch the zGames data :(</p>
+      <p>If pop-ups are disabled, you can try again.</p>
+      <button onclick="fetgh" style="width: 100%; height: 50px">Try again.</button>`;
     });
 }
 fetgh();
