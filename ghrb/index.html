@@ -186,12 +186,6 @@ select {
   transition: 0.3s;
 }
 
-#rmessage a, #rmessage button {
-  pointer-events: auto;
-} #rmessage button {
-  border-radius: 5px;
-}
-
 #gContent {
   width: 100vw;
   height: calc(100vh - 25px);
@@ -623,7 +617,6 @@ select {
 <div id="rm">
 <button id="rf" onclick="makeM()" title="New Splash"><img src="assets/refresh.svg" onerror="this.src='https://thegportal.github.io/ghrb/assets/refresh.svg'" style="width: 20px; margin-left: -6px; margin-top: -1px; cursor: pointer;"></button>
 <button id="cb" onclick="copy()" title="Copy"><img src="assets/copy.svg" onerror="this.src='https://thegportal.github.io/ghrb/assets/copy.svg'" style="width: 20px; margin-left: -6px; margin-top: -1px; cursor: pointer;"></button>
-<div id="rmessage" style="min-width: 150px; width: calc(100% - 50px); overflow-wrap: break-word; pointer-events: none;"></div>
 </div>
 <embed class="c" src="https://incr.easrng.net/badge?key=thegportal876" style="background: white; border-radius: 5px; display: block; margin: 5px;" title="increment badge" width="88" height="31" frameborder="0">
 <a class="c" href="https://info.flagcounter.com/sOkp"><img src="https://s05.flagcounter.com/count2/sOkp/bg_FFFFFF/txt_000000/border_CCCCCC/columns_8/maxflags_18/viewers_0/labels_0/pageviews_1/flags_0/percent_0/" alt="Flag Counter" border="0" height="118" width="624" style="background: white; border-radius: 7px; max-width: calc(100vw - 200px); max-height: calc((100vw - 200px) / 5.28813559322)"></a>
@@ -753,7 +746,6 @@ function monitorFrames() {
 }
 window.requestAnimationFrame(monitorFrames);
 </script>
-<script src="assets/rmessage.js" onerror="const sc=document.createElement('script');sc.src='https://thegportal.github.io/ghrb/assets/rmessage.js';sc.setAttribute('onerror','let emsgs=[`I see the random messages failed to load properly...`,`Whatever!`,`These are just bonus messages!`,`Hello!`,`Made by Jeremy Powell!`,`Skibididdy Toilet!`];document.getElementById(`rmessage`).innerHTML=emsgs[Math.floor(Math.random()*emsgs.length)]+`<p style=\'color:rgba(255,255,255,0.5);font-size:10px\'>Messages failed to load properly</p>`;document.getElementById(`rf`).remove();document.getElementById(`cb`).remove()');document.body.appendChild(sc);this.remove();"></script>
 <script>
 let mainMenu = 0;
 let menuSelect = document.getElementById("menus");
